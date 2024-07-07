@@ -18,7 +18,7 @@ struct HomeView: View {
             }
             
             GradesView().tabItem {
-                Label(local("oceny"), systemImage: "1.square")
+                Label(local("grades"), systemImage: "1.square")
             }
         }
         .refreshable(action: { await self.fetchDataTask() })
