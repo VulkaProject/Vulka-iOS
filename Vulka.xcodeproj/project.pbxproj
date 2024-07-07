@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20BAC062C3B26E200C96D0D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B20BAC052C3B26E200C96D0D /* LICENSE */; };
+		B2A6281E2C3886C2006E5EF5 /* VulkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6281D2C3886C2006E5EF5 /* VulkaApp.swift */; };
+		B2A628202C3886C2006E5EF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6281F2C3886C2006E5EF5 /* ContentView.swift */; };
+		B2A628242C3886C3006E5EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A628232C3886C3006E5EF5 /* Assets.xcassets */; };
+		B2A628272C3886C3006E5EF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A628262C3886C3006E5EF5 /* Preview Assets.xcassets */; };
+		B2A6282F2C388712006E5EF5 /* Synergia-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = B2A6282E2C388712006E5EF5 /* Synergia-Swift */; };
+		B2A628322C38877D006E5EF5 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A628312C38877D006E5EF5 /* AppSettings.swift */; };
+		B2A628372C388949006E5EF5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A628362C388949006E5EF5 /* LoginView.swift */; };
+		B2A628392C388D1F006E5EF5 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A628382C388D1F006E5EF5 /* Keychain.swift */; };
+		B2A6283B2C388FCD006E5EF5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6283A2C388FCD006E5EF5 /* Login.swift */; };
+		B2A6283D2C389057006E5EF5 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6283C2C389057006E5EF5 /* Context.swift */; };
+		B2B8A5CD2C397499006862D2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8A5CC2C397499006862D2 /* HomeView.swift */; };
+		B2B8A5D02C3978B6006862D2 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8A5CF2C3978B6006862D2 /* StartView.swift */; };
+		B2B8A5D32C397A40006862D2 /* GradesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8A5D22C397A40006862D2 /* GradesView.swift */; };
+		B2B8A5D52C397B0F006862D2 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8A5D42C397B0F006862D2 /* UserInfo.swift */; };
+		B2B8A5D72C397C43006862D2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8A5D62C397C43006862D2 /* Home.swift */; };
+		B2B8A5D92C397E31006862D2 /* LuckyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8A5D82C397E31006862D2 /* LuckyNumber.swift */; };
+		B2B8A5DB2C3AFC02006862D2 /* GradesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8A5DA2C3AFC02006862D2 /* GradesStorage.swift */; };
+		B2B8A5DE2C3B1A52006862D2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B2B8A5DD2C3B1A52006862D2 /* Localizable.xcstrings */; };
+		B2B8A5E02C3B1BA3006862D2 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B8A5DF2C3B1BA3006862D2 /* Locale.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20BAC052C3B26E200C96D0D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B20BAC072C3B26F000C96D0D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B2A6281A2C3886C2006E5EF5 /* Vulka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vulka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A6281D2C3886C2006E5EF5 /* VulkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VulkaApp.swift; sourceTree = "<group>"; };
+		B2A6281F2C3886C2006E5EF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2A628232C3886C3006E5EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2A628262C3886C3006E5EF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2A628312C38877D006E5EF5 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		B2A628362C388949006E5EF5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B2A628382C388D1F006E5EF5 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		B2A6283A2C388FCD006E5EF5 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B2A6283C2C389057006E5EF5 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		B2B8A5CC2C397499006862D2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B2B8A5CF2C3978B6006862D2 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		B2B8A5D22C397A40006862D2 /* GradesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesView.swift; sourceTree = "<group>"; };
+		B2B8A5D42C397B0F006862D2 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		B2B8A5D62C397C43006862D2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B2B8A5D82C397E31006862D2 /* LuckyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyNumber.swift; sourceTree = "<group>"; };
+		B2B8A5DA2C3AFC02006862D2 /* GradesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesStorage.swift; sourceTree = "<group>"; };
+		B2B8A5DD2C3B1A52006862D2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B2B8A5DF2C3B1BA3006862D2 /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2A628172C3886C2006E5EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A6282F2C388712006E5EF5 /* Synergia-Swift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2A628112C3886C2006E5EF5 = {
+			isa = PBXGroup;
+			children = (
+				B20BAC072C3B26F000C96D0D /* README.md */,
+				B20BAC052C3B26E200C96D0D /* LICENSE */,
+				B2A6281C2C3886C2006E5EF5 /* Vulka */,
+				B2A6281B2C3886C2006E5EF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2A6281B2C3886C2006E5EF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2A6281A2C3886C2006E5EF5 /* Vulka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2A6281C2C3886C2006E5EF5 /* Vulka */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8A5DC2C3B1A28006862D2 /* Locale */,
+				B2B8A5CB2C397371006862D2 /* Main */,
+				B2A628332C3888CA006E5EF5 /* Login */,
+				B2A628302C388762006E5EF5 /* Storage */,
+				B2A6281D2C3886C2006E5EF5 /* VulkaApp.swift */,
+				B2A6283C2C389057006E5EF5 /* Context.swift */,
+				B2A6281F2C3886C2006E5EF5 /* ContentView.swift */,
+				B2A628232C3886C3006E5EF5 /* Assets.xcassets */,
+				B2A628252C3886C3006E5EF5 /* Preview Content */,
+			);
+			path = Vulka;
+			sourceTree = "<group>";
+		};
+		B2A628252C3886C3006E5EF5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B2A628262C3886C3006E5EF5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2A628302C388762006E5EF5 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B2A628312C38877D006E5EF5 /* AppSettings.swift */,
+				B2B8A5D42C397B0F006862D2 /* UserInfo.swift */,
+				B2B8A5D82C397E31006862D2 /* LuckyNumber.swift */,
+				B2B8A5DA2C3AFC02006862D2 /* GradesStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		B2A628332C3888CA006E5EF5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B2A628362C388949006E5EF5 /* LoginView.swift */,
+				B2A6283A2C388FCD006E5EF5 /* Login.swift */,
+				B2A628382C388D1F006E5EF5 /* Keychain.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B2B8A5CB2C397371006862D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8A5D12C397A36006862D2 /* Grades */,
+				B2B8A5CE2C3978AC006862D2 /* Start */,
+				B2B8A5CC2C397499006862D2 /* HomeView.swift */,
+				B2B8A5D62C397C43006862D2 /* Home.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B2B8A5CE2C3978AC006862D2 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8A5CF2C3978B6006862D2 /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		B2B8A5D12C397A36006862D2 /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8A5D22C397A40006862D2 /* GradesView.swift */,
+			);
+			path = Grades;
+			sourceTree = "<group>";
+		};
+		B2B8A5DC2C3B1A28006862D2 /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8A5DD2C3B1A52006862D2 /* Localizable.xcstrings */,
+				B2B8A5DF2C3B1BA3006862D2 /* Locale.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2A628192C3886C2006E5EF5 /* Vulka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2A6282A2C3886C3006E5EF5 /* Build configuration list for PBXNativeTarget "Vulka" */;
+			buildPhases = (
+				B2A628162C3886C2006E5EF5 /* Sources */,
+				B2A628172C3886C2006E5EF5 /* Frameworks */,
+				B2A628182C3886C2006E5EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vulka;
+			packageProductDependencies = (
+				B2A6282E2C388712006E5EF5 /* Synergia-Swift */,
+			);
+			productName = Vulka;
+			productReference = B2A6281A2C3886C2006E5EF5 /* Vulka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2A628122C3886C2006E5EF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B2A628192C3886C2006E5EF5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = B2A628152C3886C2006E5EF5 /* Build configuration list for PBXProject "Vulka" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				pl,
+			);
+			mainGroup = B2A628112C3886C2006E5EF5;
+			packageReferences = (
+				B2A6282D2C388712006E5EF5 /* XCRemoteSwiftPackageReference "Synergia-Swift" */,
+			);
+			productRefGroup = B2A6281B2C3886C2006E5EF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2A628192C3886C2006E5EF5 /* Vulka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2A628182C3886C2006E5EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A628272C3886C3006E5EF5 /* Preview Assets.xcassets in Resources */,
+				B2A628242C3886C3006E5EF5 /* Assets.xcassets in Resources */,
+				B20BAC062C3B26E200C96D0D /* LICENSE in Resources */,
+				B2B8A5DE2C3B1A52006862D2 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2A628162C3886C2006E5EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A628202C3886C2006E5EF5 /* ContentView.swift in Sources */,
+				B2A6281E2C3886C2006E5EF5 /* VulkaApp.swift in Sources */,
+				B2A6283D2C389057006E5EF5 /* Context.swift in Sources */,
+				B2B8A5DB2C3AFC02006862D2 /* GradesStorage.swift in Sources */,
+				B2A628372C388949006E5EF5 /* LoginView.swift in Sources */,
+				B2B8A5E02C3B1BA3006862D2 /* Locale.swift in Sources */,
+				B2B8A5D32C397A40006862D2 /* GradesView.swift in Sources */,
+				B2A6283B2C388FCD006E5EF5 /* Login.swift in Sources */,
+				B2A628322C38877D006E5EF5 /* AppSettings.swift in Sources */,
+				B2B8A5CD2C397499006862D2 /* HomeView.swift in Sources */,
+				B2B8A5D92C397E31006862D2 /* LuckyNumber.swift in Sources */,
+				B2B8A5D02C3978B6006862D2 /* StartView.swift in Sources */,
+				B2B8A5D52C397B0F006862D2 /* UserInfo.swift in Sources */,
+				B2B8A5D72C397C43006862D2 /* Home.swift in Sources */,
+				B2A628392C388D1F006E5EF5 /* Keychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B2A628282C3886C3006E5EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2A628292C3886C3006E5EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2A6282B2C3886C3006E5EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vulka/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vulka;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.vulka.Vulka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2A6282C2C3886C3006E5EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vulka/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vulka;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.vulka.Vulka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2A628152C3886C2006E5EF5 /* Build configuration list for PBXProject "Vulka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2A628282C3886C3006E5EF5 /* Debug */,
+				B2A628292C3886C3006E5EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2A6282A2C3886C3006E5EF5 /* Build configuration list for PBXNativeTarget "Vulka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2A6282B2C3886C3006E5EF5 /* Debug */,
+				B2A6282C2C3886C3006E5EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2A6282D2C388712006E5EF5 /* XCRemoteSwiftPackageReference "Synergia-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VulkaProject/Synergia-Swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2A6282E2C388712006E5EF5 /* Synergia-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2A6282D2C388712006E5EF5 /* XCRemoteSwiftPackageReference "Synergia-Swift" */;
+			productName = "Synergia-Swift";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B2A628122C3886C2006E5EF5 /* Project object */;
+}

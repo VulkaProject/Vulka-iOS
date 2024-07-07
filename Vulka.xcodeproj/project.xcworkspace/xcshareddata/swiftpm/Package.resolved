@@ -1,0 +1,15 @@
+{
+  "originHash" : "5f8a71882c55b3a2fcf7b83061d7f4ec173e553feab1e95aeaa69436336453b1",
+  "pins" : [
+    {
+      "identity" : "synergia-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/VulkaProject/Synergia-Swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0119afa311bb59c6460ce762b0147f86b8b32a07"
+      }
+    }
+  ],
+  "version" : 3
+}
