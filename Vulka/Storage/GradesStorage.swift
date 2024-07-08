@@ -13,6 +13,7 @@ final class GradesStorageItem {
         
         var grade: String
         var weight: UInt64
+        var comment: String?
         var semester: UInt8
         var category: String
         var teacher: String
@@ -20,9 +21,10 @@ final class GradesStorageItem {
         var date: Date
         var type: AdditionalGradeTypes?
 
-        init(grade: String, weight: UInt64, semester: UInt8, category: String, teacher: String, subject: String, date: Date, type: AdditionalGradeTypes? = nil) {
+        init(grade: String, weight: UInt64, comment: String?, semester: UInt8, category: String, teacher: String, subject: String, date: Date, type: AdditionalGradeTypes? = nil) {
             self.grade = grade
             self.weight = weight
+            self.comment = comment
             self.semester = semester
             self.category = category
             self.teacher = teacher

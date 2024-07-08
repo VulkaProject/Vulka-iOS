@@ -112,6 +112,23 @@
         }
       }
     },
+    "grade_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opis"
+          }
+        }
+      }
+    },
     "grade_subject" : {
       "extractionState" : "manual",
       "localizations" : {

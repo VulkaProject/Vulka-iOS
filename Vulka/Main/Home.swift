@@ -39,7 +39,8 @@ extension HomeView {
                     dict.value.forEach {
                         arr[dict.key]!.append(GradesStorageItem.Grade(
                             grade: $0.grade,
-                            weight: UInt64($0.weight),
+                            weight: $0.weight,
+                            comment: $0.comment,
                             semester: $0.semester,
                             category: $0.category,
                             teacher: $0.teacher,

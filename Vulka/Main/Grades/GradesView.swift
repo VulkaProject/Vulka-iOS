@@ -38,6 +38,9 @@ struct GradesView: View {
                     Text("\(local("grade_added_by")): \(grade.teacher)")
                     Text("\(local("grade_subject")): \(grade.subject)")
                     Text("\(local("grade_category")): \(grade.category)")
+                    if let comment = grade.comment {
+                        Text("\(local("grade_description")): \(comment)")
+                    }
                     Text("\(local("grade_date")): \(grade.date)")
                 }
                 Button(local("close")) { self.showGradeInfo = false }
@@ -46,8 +49,8 @@ struct GradesView: View {
     }
     
     func openGradeInfo(_ grade: GradesStorageItem.Grade) {
-        self.selectedGrade = grade
         self.showGradeInfo = true
+        self.selectedGrade = grade
     }
 }
 
@@ -64,7 +67,7 @@ private struct GradeView: View {
                 Text(grade.category)
             }
             Spacer()
-            Button(local("more")) { self.onMore() }
+            Button(local("more")) { Task { self.onMore() } }
             .buttonStyle(.plain)
             .foregroundStyle(Color.blue)
         }
