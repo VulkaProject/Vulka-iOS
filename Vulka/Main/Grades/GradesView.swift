@@ -4,8 +4,6 @@ import SwiftData
 struct GradesView: View {
     @Query var grades: [GradesStorageItem]
     @Query var userInfo: [UserInfo]
-    @State var selectedGrade: GradesStorageItem.Grade?
-    @State var showGradeInfo: Bool = false
     
     var body: some View {
         List {
@@ -21,7 +19,7 @@ struct GradesView: View {
                                     .filter({ $0.semester == semester })
                                     .sorted(by: { $0.date.compare($1.date) == .orderedAscending })
                                 ) { grade in
-                                    GradeView(grade: grade, onMore: { self.openGradeInfo(grade) })
+                                    GradeView(grade: grade)
                                 }
                             }
                         }
@@ -29,34 +27,12 @@ struct GradesView: View {
                 }
             }
         }
-        
-        .sheet(isPresented: self.$showGradeInfo) {
-            List {
-                if let grade = self.selectedGrade {
-                    Text("\(local("grade_value")): \(grade.grade)")
-                    Text("\(local("grade_weight")): \(grade.weight)")
-                    Text("\(local("grade_added_by")): \(grade.teacher)")
-                    Text("\(local("grade_subject")): \(grade.subject)")
-                    Text("\(local("grade_category")): \(grade.category)")
-                    if let comment = grade.comment {
-                        Text("\(local("grade_description")): \(comment)")
-                    }
-                    Text("\(local("grade_date")): \(grade.date)")
-                }
-                Button(local("close")) { self.showGradeInfo = false }
-            }
-        }
-    }
-    
-    func openGradeInfo(_ grade: GradesStorageItem.Grade) {
-        self.showGradeInfo = true
-        self.selectedGrade = grade
     }
 }
 
 private struct GradeView: View {
     var grade: GradesStorageItem.Grade
-    var onMore: () -> ()
+    @State var showGradeInfo: Bool = false
     
     var body: some View {
         HStack {
@@ -67,9 +43,24 @@ private struct GradeView: View {
                 Text(grade.category)
             }
             Spacer()
-            Button(local("more")) { Task { self.onMore() } }
+            Button(local("more")) { self.showGradeInfo = true }
             .buttonStyle(.plain)
             .foregroundStyle(Color.blue)
+        }
+        
+        .sheet(isPresented: self.$showGradeInfo) {
+            List {
+                Text("\(local("grade_value")): \(self.grade.grade)")
+                Text("\(local("grade_weight")): \(self.grade.weight)")
+                Text("\(local("grade_added_by")): \(self.grade.teacher)")
+                Text("\(local("grade_subject")): \(self.grade.subject)")
+                Text("\(local("grade_category")): \(self.grade.category)")
+                if let comment = self.grade.comment {
+                    Text("\(local("grade_description")): \(comment)")
+                }
+                Text("\(local("grade_date")): \(self.grade.date)")
+                Button(local("close")) { self.showGradeInfo = false }
+            }
         }
     }
 }

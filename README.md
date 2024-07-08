@@ -4,7 +4,7 @@ Librus Synergia client for iOS.
 ## Things done
 - Displaying your first and last name
 - Lucky number
-- Grades (displaying details work after refresh, will be fixed)
+- Grades
 - Polish and english
 
 ### UONET+ Vulcan
