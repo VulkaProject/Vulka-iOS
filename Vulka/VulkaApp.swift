@@ -12,7 +12,8 @@ struct VulkaApp: App {
             AppSettingsStorage.self,
             UserInfo.self,
             LuckyNumberStorage.self,
-            GradesStorageItem.self
+            GradesStorageItem.self,
+            AttendancesStorage.self
         ])
     }
 }

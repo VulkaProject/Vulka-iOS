@@ -6,6 +6,7 @@ struct HomeView: View {
     @Query var userInfo: [UserInfo]
     @Query var luckyNumberStorage: [LuckyNumberStorage]
     @Query var grades: [GradesStorageItem]
+    @Query var attendances: [AttendancesStorage]
     @EnvironmentObject var appContext: AppContext
     
     var login: String
@@ -19,6 +20,10 @@ struct HomeView: View {
             
             GradesView().tabItem {
                 Label(local("grades"), systemImage: "1.square")
+            }
+            
+            AttendanceView().tabItem {
+                Label(local("attendance"), systemImage: "x.square")
             }
         }
         .refreshable(action: { await self.fetchDataTask() })

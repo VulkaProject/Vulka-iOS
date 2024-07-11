@@ -2,7 +2,7 @@
 set -e
 
 cd "$(dirname $0)"
-rm -rf Build
+rm -rf Build Vulka.ipa
 xcodebuild build -project Vulka.xcodeproj -scheme Vulka -sdk iphoneos -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO SYMROOT=${PWD}/Build build
 cd Build/Release-iphoneos
 mkdir -p Payload

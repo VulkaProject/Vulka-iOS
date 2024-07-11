@@ -6,6 +6,7 @@ extension HomeView {
         var userInfo: UserInfo
         var luckyNumber: UInt8
         var grades: [String : [GradesStorageItem.Grade]]
+        var attendances: [String: [AttendancesStorage.AttendanceEntry]]
     }
     
     func fetchData() async throws -> FetchedData? {
@@ -52,10 +53,30 @@ extension HomeView {
             }
         ) else { return nil }
         
+        guard let attendances = try await self.appContext.operation(
+            synergia: {
+                let attendances = try await self.appContext.lClient!.getAttendances()
+                return attendances.reduce(into: [String: [AttendancesStorage.AttendanceEntry]]()) { vulkaAtten, synAtten in
+                    vulkaAtten[synAtten.key] = synAtten.value.reduce(into: [AttendancesStorage.AttendanceEntry]()) { dst, src in
+                        dst.append(
+                            AttendancesStorage.AttendanceEntry(
+                                lessonNo: src.lessonNo,
+                                typeFull: src.typeFull,
+                                typeShort: src.typeShort,
+                                addedBy: src.addedBy,
+                                color: src.colorRgb
+                            )
+                        )
+                    }
+                }
+            }
+        ) else { return nil }
+        
         return FetchedData(
             userInfo: userInfo,
             luckyNumber: luckyNumber,
-            grades: grades
+            grades: grades,
+            attendances: attendances
         )
     }
     
@@ -74,6 +95,9 @@ extension HomeView {
         
         self.deleteModel(self.grades)
         modelContext.insert(GradesStorageItem(grades: data.grades))
+        
+        self.deleteModel(self.attendances)
+        modelContext.insert(AttendancesStorage(attendances: data.attendances))
     }
     
     func fetchDataTask() async {
